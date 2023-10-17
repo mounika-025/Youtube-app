@@ -31,10 +31,10 @@ const SideBar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
   if (!isMenuOpen) return null;
   return (
-    <aside
-      className={`fixed top-16  z-50  w-64 p-4 h-screen   left-0 overflow-y-auto
-    bg-white text-white" 
-  }`}
+    <div
+      className="fixed top-16  z-20 w-25 p-4 h-screen   left-0 overflow-y-auto
+    bg-white text-black
+    "
     >
       <ul className="space-y-2">
         <Link to="/">
@@ -125,7 +125,7 @@ const SideBar = () => {
           <span>Show 38 more</span>
         </li>
       </ul>
-    </aside>
+    </div>
   );
 };
 
